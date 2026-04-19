@@ -1,10 +1,17 @@
 import Link from "next/link";
+import { RotatingRole } from "./rotating-role";
 
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/skills", label: "Skills" },
   { href: "/contact", label: "Contact" },
+];
+
+const headerRoles = [
+  "Full-Stack Developer",
+  "Flutter Developer",
+  "Competitive Programmer",
 ];
 
 export function SiteShell({ children }: { children: React.ReactNode }) {
@@ -17,10 +24,10 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-6 py-4 sm:px-10 md:flex-row md:items-center md:justify-between lg:px-12">
           <div>
             <p className="font-mono text-xs uppercase tracking-[0.35em] text-[#7dba7d]">
-              Portfolio.exe
+              Ibrahim Muhaba
             </p>
             <h1 className="mt-1 text-base font-semibold text-[rgba(232,255,232,0.82)] sm:text-lg">
-              Creative developer terminal
+              <RotatingRole roles={headerRoles} />
             </h1>
           </div>
 

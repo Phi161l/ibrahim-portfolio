@@ -14,8 +14,8 @@ export default function ContactPage() {
     <main className="flex flex-1 flex-col gap-8 pb-10">
       <PageHeader
         eyebrow="Contact"
-        title="A cleaner place for all your links."
-        description="This page is ready for your actual contact details and social profiles, with enough room to add GitHub, LeetCode, LinkedIn, email, and your CV without crowding the rest of the site."
+        title="Links and contact."
+        description="The places to reach me and the profiles that support my work."
       />
 
       <section className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 sm:p-8">

@@ -50,6 +50,9 @@ export function RotatingRole({ roles }: RotatingRoleProps) {
   return (
     <span className="inline-block min-w-[24ch] text-left">
       {displayText}
+      <span className="ml-1 inline-block animate-pulse text-[rgba(125,186,125,0.82)]">
+        |
+      </span>
     </span>
   );
 }

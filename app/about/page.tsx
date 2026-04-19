@@ -1,44 +1,87 @@
 import { PageHeader } from "../_components/page-header";
 
+const highlights = [
+  "Full-stack product thinking",
+  "Flutter cross-platform development",
+  "Performance-focused interfaces",
+  "Competitive programming mindset",
+];
+
 export default function AboutPage() {
   return (
     <main className="flex flex-1 flex-col gap-8 pb-10">
       <PageHeader
         eyebrow="About"
-        title="A sharper space for your story."
-        description="This page is now separated so your background, approach, and developer identity can breathe, and it also gives you a better place for GitHub and LeetCode graphs."
+        title="Developer, builder, and problem solver."
+        description="I build practical digital products across web and mobile, with a focus on clean experiences, strong implementation, and continuous growth."
       />
 
-      <section className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr]">
-        <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 sm:p-8">
-          <p className="max-w-4xl text-lg leading-8 text-[rgba(214,240,214,0.74)]">
-            You can use this page to describe who you are, what kind of products
-            you like building, and how you combine full-stack development with
-            Flutter mobile work. The layout is intentionally simple so we can add
-            your real personal story next.
+      <section className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
+        <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[linear-gradient(180deg,rgba(9,18,9,0.9),rgba(4,10,4,0.88))] p-6 transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[linear-gradient(180deg,rgba(18,38,18,0.94),rgba(7,18,7,0.92))] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)] sm:p-8">
+          <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
+            Profile
           </p>
+          <p className="mt-5 max-w-4xl text-lg leading-8 text-[rgba(214,240,214,0.72)]">
+            I enjoy taking ideas from concept to working product, shaping them
+            into interfaces and systems that feel modern, responsive, and
+            useful in real-world use.
+          </p>
+          <p className="mt-4 max-w-4xl leading-8 text-[rgba(181,214,181,0.68)]">
+            Alongside product building, I keep sharpening my thinking through
+            consistent coding practice and problem solving, which helps me
+            approach development with both creativity and discipline.
+          </p>
+
+          <div className="mt-8 grid gap-3 sm:grid-cols-2">
+            {highlights.map((item) => (
+              <div
+                key={item}
+                className="rounded-[0.55rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(125,186,125,0.04)] px-4 py-4 font-mono text-sm text-[rgba(216,245,216,0.78)] transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(125,186,125,0.1)] hover:text-[rgba(238,252,238,0.9)]"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="space-y-6">
-          <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6">
+          <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[linear-gradient(180deg,rgba(10,22,10,0.92),rgba(4,10,4,0.92))] p-6 transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[linear-gradient(180deg,rgba(20,44,20,0.94),rgba(7,18,7,0.92))] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
-              GitHub Graph
+              Snapshot
             </p>
-            <p className="mt-4 leading-7 text-[rgba(181,214,181,0.72)]">
-              This card is ready for your GitHub contribution graph or activity
-              embed.
-            </p>
+            <div className="mt-5 space-y-4 font-mono text-sm text-[rgba(183,221,183,0.68)]">
+              <div className="flex items-center justify-between border-b border-[rgba(125,186,125,0.08)] pb-3">
+                <span>Focus</span>
+                <span className="text-[rgba(238,252,238,0.8)]">Web + Mobile</span>
+              </div>
+              <div className="flex items-center justify-between border-b border-[rgba(125,186,125,0.08)] pb-3">
+                <span>Stack</span>
+                <span className="text-[rgba(238,252,238,0.8)]">TypeScript + Flutter</span>
+              </div>
+              <div className="flex items-center justify-between">
+                <span>Style</span>
+                <span className="text-[rgba(238,252,238,0.8)]">Clean + practical</span>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6">
-            <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
-              LeetCode Graph
-            </p>
-            <p className="mt-4 leading-7 text-[rgba(181,214,181,0.72)]">
-              This card is ready for your LeetCode stats graph or coding
-              progress visual.
-            </p>
-          </div>
+      <section className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(8,18,8,0.9)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)] sm:p-8">
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
+          GitHub Graph
+        </p>
+        <div className="mt-5 flex min-h-64 items-center justify-center rounded-[0.55rem] border border-dashed border-[rgba(125,186,125,0.16)] bg-[rgba(125,186,125,0.03)] px-4 text-center text-sm leading-7 text-[rgba(181,214,181,0.68)]">
+          Your GitHub contribution graph or activity image will sit here.
+        </div>
+      </section>
+
+      <section className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(8,18,8,0.9)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)] sm:p-8">
+        <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
+          LeetCode Graph
+        </p>
+        <div className="mt-5 flex min-h-64 items-center justify-center rounded-[0.55rem] border border-dashed border-[rgba(125,186,125,0.16)] bg-[rgba(125,186,125,0.03)] px-4 text-center text-sm leading-7 text-[rgba(181,214,181,0.68)]">
+          Your LeetCode stats, graph, or coding activity visual will sit here.
         </div>
       </section>
     </main>
