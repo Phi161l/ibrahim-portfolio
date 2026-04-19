@@ -2,13 +2,11 @@
 
 import { useEffect, useState } from "react";
 
-const roles = [
-  "Fullstack Developer",
-  "Flutter Developer",
-  "Competitive Programmer",
-];
+type RotatingRoleProps = {
+  roles: string[];
+};
 
-export function RotatingRole() {
+export function RotatingRole({ roles }: RotatingRoleProps) {
   const [index, setIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -47,12 +45,11 @@ export function RotatingRole() {
     }, timeout);
 
     return () => window.clearTimeout(timer);
-  }, [displayText, index, isDeleting]);
+  }, [displayText, index, isDeleting, roles]);
 
   return (
     <span className="inline-block min-w-[24ch] text-left">
       {displayText}
-      <span className="ml-1 inline-block animate-pulse text-[#7dba7d]">|</span>
     </span>
   );
 }

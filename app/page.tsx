@@ -1,45 +1,48 @@
 import Link from "next/link";
 import { RotatingRole } from "./_components/rotating-role";
 
+const roles = [
+  "Full-Stack Developer",
+  "Flutter Developer",
+  "Competitive Programmer",
+];
+
 const projects = [
   {
-    name: "Project Alpha",
-    type: "Full-stack platform",
+    name: "Lissan AI",
+    type: "Mobile application",
+    repo: "https://github.com/yaftes/lissan-ai-mobile",
     summary:
-      "A placeholder case study for your main web product, admin tools, and backend architecture.",
+      "A cross-platform Flutter application focused on AI-powered language features, with a modern mobile interface and rich user interactions.",
   },
   {
-    name: "Project Pulse",
-    type: "Flutter mobile app",
+    name: "Prompt Organizer",
+    type: "Mobile application",
+    repo: "https://github.com/Phi161l/prompt_organizer",
     summary:
-      "A mobile-focused project slot for the app that best shows your cross-platform product thinking.",
+      "A Flutter app built to save, organize, and manage AI prompts, giving users a simple workflow for storing and reusing prompt templates.",
   },
   {
-    name: "Project Node",
-    type: "Backend system",
+    name: "School CRUD AI",
+    type: "Full-stack web application",
+    repo: "https://github.com/Phi161l/school-crud-ai",
     summary:
-      "A clean space for an API, dashboard, or automation product that highlights performance and scale.",
+      "A school management platform for handling students, teachers, courses, and grades, with secure authentication and role-based dashboards.",
   },
 ];
 
 const experience = [
   {
-    role: "Full-Stack Developer",
-    period: "Current Focus",
+    role: "Flutter Mobile Application Developer",
+    period: "June 2025 - October 2025",
     summary:
-      "Building complete products from interface to backend logic with a focus on clean UX and solid architecture.",
+      "Built the Lissan AI mobile app at A2SV, delivering interactive Flutter interfaces and AI-driven language features while collaborating in an open-source workflow with regular standups, cooldown meetings, and performance-focused development practices.",
   },
   {
-    role: "Flutter Mobile Developer",
-    period: "Cross-platform",
+    role: "Frontend Developer and UI/UX Designer",
+    period: "December 2025 - Present",
     summary:
-      "Creating mobile apps with polished flows, reusable UI, and connected backend experiences.",
-  },
-  {
-    role: "Creative Problem Solver",
-    period: "Always On",
-    summary:
-      "Blending technical thinking with visual direction so products feel both sharp and memorable.",
+      "Designing interfaces from PRDs and building interactive web applications with TypeScript at A2SV, working closely with backend teammates and contributing through a structured team workflow with regular standups and review sessions.",
   },
 ];
 
@@ -59,15 +62,16 @@ export default function Home() {
               Hello, I&apos;m
             </p>
             <h2 className="mt-5 text-5xl font-semibold leading-none text-[rgba(241,255,241,0.46)] sm:text-6xl">
-              Mike Imi
+              Ibrahim Muhaba
             </h2>
             <p className="mt-4 text-2xl font-medium text-[rgba(125,186,125,0.84)] sm:text-3xl">
-              <RotatingRole />
+              <RotatingRole roles={roles} />
             </p>
             <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-[rgba(155,201,155,0.78)] sm:text-lg">
-              I build scalable web applications, dashboards, and ecommerce
-              platforms using modern JavaScript technologies. Focused on
-              performance, architecture, and beautiful user interfaces.
+              I build scalable web applications, mobile applications, and
+              dashboards using modern JavaScript and TypeScript technologies.
+              My focus is on performance, solid architecture, and beautiful
+              user interfaces.
             </p>
 
           <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -119,6 +123,14 @@ export default function Home() {
               <p className="mt-4 leading-7 text-[rgba(181,214,181,0.72)]">
                 {item.summary}
               </p>
+              <a
+                className="mt-5 inline-block font-mono text-xs uppercase tracking-[0.2em] text-[rgba(125,186,125,0.84)] transition hover:text-[#dff7df]"
+                href={item.repo}
+                target="_blank"
+                rel="noreferrer"
+              >
+                View Repository
+              </a>
             </article>
           ))}
         </div>
