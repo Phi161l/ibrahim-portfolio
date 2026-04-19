@@ -1,0 +1,58 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
+const roles = [
+  "Fullstack Developer",
+  "Flutter Developer",
+  "Competitive Programmer",
+];
+
+export function RotatingRole() {
+  const [index, setIndex] = useState(0);
+  const [displayText, setDisplayText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const currentRole = roles[index];
+    const isComplete = displayText === currentRole;
+    const isEmpty = displayText.length === 0;
+
+    let timeout = 110;
+
+    if (isDeleting) {
+      timeout = 45;
+    } else if (isComplete) {
+      timeout = 1200;
+    }
+
+    const timer = window.setTimeout(() => {
+      if (!isDeleting && !isComplete) {
+        setDisplayText(currentRole.slice(0, displayText.length + 1));
+        return;
+      }
+
+      if (!isDeleting && isComplete) {
+        setIsDeleting(true);
+        return;
+      }
+
+      if (isDeleting && !isEmpty) {
+        setDisplayText(currentRole.slice(0, displayText.length - 1));
+        return;
+      }
+
+      setIsDeleting(false);
+      setIndex((current) => (current + 1) % roles.length);
+    }, timeout);
+
+    return () => window.clearTimeout(timer);
+  }, [displayText, index, isDeleting]);
+
+  return (
+    <span className="inline-block min-w-[24ch] text-left">
+      {displayText}
+      <span className="ml-1 inline-block animate-pulse text-[#7dba7d]">|</span>
+    </span>
+  );
+}
