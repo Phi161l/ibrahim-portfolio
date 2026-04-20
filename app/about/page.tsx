@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PageHeader } from "../_components/page-header";
 
 const highlights = [
@@ -71,8 +72,15 @@ export default function AboutPage() {
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
           GitHub Graph
         </p>
-        <div className="mt-5 flex min-h-64 items-center justify-center rounded-[0.55rem] border border-dashed border-[rgba(125,186,125,0.16)] bg-[rgba(125,186,125,0.03)] px-4 text-center text-sm leading-7 text-[rgba(181,214,181,0.68)]">
-          Your GitHub contribution graph or activity image will sit here.
+        <div className="relative mt-5 overflow-hidden rounded-[0.55rem] border border-[rgba(125,186,125,0.14)] bg-[rgba(2,6,2,0.92)] p-3">
+          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(125,186,125,0.08),rgba(125,186,125,0.03))]" />
+          <Image
+            src="/github.png"
+            alt="GitHub contribution graph"
+            width={757}
+            height={197}
+            className="relative h-auto w-full rounded-[0.4rem] border border-[rgba(125,186,125,0.08)] opacity-92 contrast-110 saturate-[0.65] brightness-[0.92]"
+          />
         </div>
       </section>
 
@@ -80,8 +88,15 @@ export default function AboutPage() {
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
           LeetCode Graph
         </p>
-        <div className="mt-5 flex min-h-64 items-center justify-center rounded-[0.55rem] border border-dashed border-[rgba(125,186,125,0.16)] bg-[rgba(125,186,125,0.03)] px-4 text-center text-sm leading-7 text-[rgba(181,214,181,0.68)]">
-          Your LeetCode stats, graph, or coding activity visual will sit here.
+        <div className="relative mt-5 overflow-hidden rounded-[0.55rem] border border-[rgba(125,186,125,0.14)] bg-[rgba(2,6,2,0.92)] p-3">
+          <div className="pointer-events-none absolute inset-0 z-10 bg-[linear-gradient(180deg,rgba(125,186,125,0.14),rgba(125,186,125,0.05))] mix-blend-screen" />
+          <Image
+            src="/leetcode.png"
+            alt="LeetCode activity graph"
+            width={840}
+            height={188}
+            className="relative h-auto w-full rounded-[0.4rem] border border-[rgba(125,186,125,0.08)] opacity-92 contrast-[1.08] saturate-[0.45] brightness-[0.82] sepia-[0.18]"
+          />
         </div>
       </section>
     </main>

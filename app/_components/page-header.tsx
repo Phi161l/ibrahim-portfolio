@@ -10,22 +10,21 @@ export function PageHeader({
   description,
 }: PageHeaderProps) {
   return (
-    <section className="pt-6 sm:pt-8">
-      <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[linear-gradient(180deg,rgba(6,16,6,0.96),rgba(2,7,2,0.96))] p-5 shadow-[0_0_36px_rgba(125,186,125,0.08)] sm:p-6">
-        <div className="mb-5 flex items-center gap-2">
-          <span className="h-2.5 w-2.5 rounded-full bg-[#7dba7d]" />
-          <span className="h-2.5 w-2.5 rounded-full bg-[#4f7a4f]" />
-          <span className="h-2.5 w-2.5 rounded-full bg-[#243824]" />
+    <section className="pt-5 pb-2 sm:pt-6 sm:pb-3">
+      <div className="relative overflow-hidden rounded-[0.7rem] border border-[rgba(125,186,125,0.09)] bg-[linear-gradient(180deg,rgba(7,14,7,0.72),rgba(3,7,3,0.54))] px-4 py-4 shadow-[0_0_24px_rgba(125,186,125,0.04)] sm:px-5 sm:py-5">
+        <div className="absolute inset-y-0 left-0 w-px bg-[rgba(125,186,125,0.32)]" />
+        <div className="mb-3 flex items-center gap-3">
+          <span className="h-px w-8 bg-[rgba(125,186,125,0.4)]" />
+          <p className="font-mono text-xs uppercase tracking-[0.32em] text-[#7dba7d]">
+            {eyebrow}
+          </p>
         </div>
 
-        <p className="font-mono text-xs uppercase tracking-[0.32em] text-[#7dba7d]">
-          {eyebrow}
-        </p>
-        <h2 className="mt-3 max-w-3xl text-3xl font-semibold leading-tight text-[rgba(241,255,241,0.86)] sm:text-4xl">
+        <h2 className="max-w-3xl text-2xl font-semibold leading-tight text-[rgba(241,255,241,0.86)] sm:text-3xl">
           {title}
         </h2>
         {description ? (
-          <p className="mt-4 max-w-2xl text-sm leading-7 text-[rgba(155,201,155,0.74)] sm:text-base">
+          <p className="mt-2 max-w-2xl text-sm leading-6 text-[rgba(155,201,155,0.72)] sm:text-base">
             {description}
           </p>
         ) : null}
