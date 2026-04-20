@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <main className="flex flex-1 flex-col gap-8 pb-10">
       <section className="flex min-h-[calc(100vh-8rem)] items-center justify-center">
-        <div className="w-full min-h-[32rem] rounded-[0.7rem] border border-[rgba(125,186,125,0.14)] bg-[linear-gradient(180deg,rgba(6,16,6,0.96),rgba(2,7,2,0.96))] p-6 text-center shadow-[0_0_50px_rgba(125,186,125,0.1)] sm:min-h-[36rem] sm:p-8">
+        <div className="w-full min-h-[32rem] rounded-[0.4rem] border border-[rgba(125,186,125,0.14)] bg-[linear-gradient(180deg,rgba(6,16,6,0.96),rgba(2,7,2,0.96))] p-6 text-center shadow-[0_0_50px_rgba(125,186,125,0.1)] transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_38px_rgba(125,186,125,0.16)] sm:min-h-[36rem] sm:p-8">
           <div className="mb-8 flex items-center justify-center gap-2">
             <span className="h-3 w-3 rounded-full bg-[#7dba7d]" />
             <span className="h-3 w-3 rounded-full bg-[#4f7a4f]" />
@@ -109,7 +109,7 @@ export default function Home() {
           {projects.map((item, index) => (
             <article
               key={item.name}
-              className="rounded-[0.55rem] border border-[rgba(125,186,125,0.12)] bg-[linear-gradient(180deg,rgba(10,22,10,0.92),rgba(4,10,4,0.92))] p-5 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:bg-[linear-gradient(180deg,rgba(32,74,32,0.98),rgba(13,36,13,0.98))] hover:shadow-[0_0_35px_rgba(125,186,125,0.28)]"
+              className="rounded-[0.55rem] border border-[rgba(125,186,125,0.12)] bg-[linear-gradient(180deg,rgba(10,22,10,0.92),rgba(4,10,4,0.92))] p-5 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.2)]"
             >
               <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
                 0{index + 1}
@@ -153,7 +153,7 @@ export default function Home() {
           {experience.map((item) => (
             <article
               key={item.role}
-              className="rounded-[0.55rem] border border-[rgba(125,186,125,0.12)] bg-[linear-gradient(180deg,rgba(10,22,10,0.92),rgba(4,10,4,0.92))] p-5 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:bg-[linear-gradient(180deg,rgba(32,74,32,0.98),rgba(13,36,13,0.98))] hover:shadow-[0_0_35px_rgba(125,186,125,0.28)]"
+              className="rounded-[0.55rem] border border-[rgba(125,186,125,0.12)] bg-[linear-gradient(180deg,rgba(10,22,10,0.92),rgba(4,10,4,0.92))] p-5 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.2)]"
             >
               <p className="font-mono text-xs uppercase tracking-[0.3em] text-[rgba(125,186,125,0.84)]">
                 {item.period}
@@ -171,3 +171,4 @@ export default function Home() {
     </main>
   );
 }
+

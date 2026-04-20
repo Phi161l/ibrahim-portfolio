@@ -40,7 +40,7 @@ export default function ContactPage() {
               href={item.href}
               target={item.href.startsWith("http") ? "_blank" : undefined}
               rel={item.href.startsWith("http") ? "noreferrer" : undefined}
-              className="rounded-[0.55rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(125,186,125,0.05)] p-5 transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(125,186,125,0.1)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]"
+              className="rounded-[0.55rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(125,186,125,0.05)] p-5 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]"
             >
               <p className="font-mono text-sm uppercase tracking-[0.24em] text-[rgba(125,186,125,0.84)]">
                 {item.label}

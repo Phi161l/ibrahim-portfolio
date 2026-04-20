@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 
 type RotatingRoleProps = {
   roles: string[];
+  className?: string;
 };
 
-export function RotatingRole({ roles }: RotatingRoleProps) {
+export function RotatingRole({ roles, className = "" }: RotatingRoleProps) {
   const [index, setIndex] = useState(0);
   const [displayText, setDisplayText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
@@ -48,7 +49,7 @@ export function RotatingRole({ roles }: RotatingRoleProps) {
   }, [displayText, index, isDeleting, roles]);
 
   return (
-    <span className="inline-block min-w-[24ch] text-left">
+    <span className={`inline-block min-w-[16ch] text-left sm:min-w-[24ch] ${className}`}>
       {displayText}
       <span className="ml-1 inline-block animate-pulse text-[rgba(125,186,125,0.82)]">
         |

@@ -18,7 +18,7 @@ export default function AboutPage() {
       />
 
       <section className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr]">
-        <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[linear-gradient(180deg,rgba(9,18,9,0.9),rgba(4,10,4,0.88))] p-6 transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[linear-gradient(180deg,rgba(18,38,18,0.94),rgba(7,18,7,0.92))] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)] sm:p-8">
+        <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[linear-gradient(180deg,rgba(9,18,9,0.9),rgba(4,10,4,0.88))] p-6 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)] sm:p-8">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
             Profile
           </p>
@@ -37,7 +37,7 @@ export default function AboutPage() {
             {highlights.map((item) => (
               <div
                 key={item}
-                className="rounded-[0.55rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(125,186,125,0.04)] px-4 py-4 font-mono text-sm text-[rgba(216,245,216,0.78)] transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(125,186,125,0.1)] hover:text-[rgba(238,252,238,0.9)]"
+                className="rounded-[0.55rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(125,186,125,0.04)] px-4 py-4 font-mono text-sm text-[rgba(216,245,216,0.78)] transition duration-300 hover:-translate-y-0.5 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_24px_rgba(125,186,125,0.14)] hover:text-[rgba(238,252,238,0.9)]"
               >
                 {item}
               </div>
@@ -46,7 +46,7 @@ export default function AboutPage() {
         </div>
 
         <div className="space-y-6">
-          <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[linear-gradient(180deg,rgba(10,22,10,0.92),rgba(4,10,4,0.92))] p-6 transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[linear-gradient(180deg,rgba(20,44,20,0.94),rgba(7,18,7,0.92))] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
+          <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[linear-gradient(180deg,rgba(10,22,10,0.92),rgba(4,10,4,0.92))] p-6 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
             <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
               Snapshot
             </p>
@@ -68,7 +68,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(8,18,8,0.9)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)] sm:p-8">
+      <section className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)] sm:p-8">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
           GitHub Graph
         </p>
@@ -84,7 +84,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(8,18,8,0.9)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)] sm:p-8">
+      <section className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)] sm:p-8">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
           LeetCode Graph
         </p>
@@ -102,3 +102,4 @@ export default function AboutPage() {
     </main>
   );
 }
+

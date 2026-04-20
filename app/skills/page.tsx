@@ -23,7 +23,7 @@ export default function SkillsPage() {
       />
 
       <section className="space-y-6">
-        <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(8,18,8,0.9)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
+        <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
             Languages
           </p>
@@ -31,7 +31,7 @@ export default function SkillsPage() {
             {languages.map((item) => (
               <span
                 key={item}
-                className="rounded-[0.45rem] border border-[rgba(125,186,125,0.14)] bg-[rgba(125,186,125,0.07)] px-4 py-2 font-mono text-sm text-[rgba(216,245,216,0.78)] transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(125,186,125,0.1)] hover:text-[rgba(238,252,238,0.9)]"
+                className="rounded-[0.45rem] border border-[rgba(125,186,125,0.14)] bg-[rgba(125,186,125,0.07)] px-4 py-2 font-mono text-sm text-[rgba(216,245,216,0.78)] transition duration-300 hover:-translate-y-0.5 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_24px_rgba(125,186,125,0.14)] hover:text-[rgba(238,252,238,0.9)]"
               >
                 {item}
               </span>
@@ -39,7 +39,7 @@ export default function SkillsPage() {
           </div>
         </div>
 
-        <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(8,18,8,0.9)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
+        <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
             Frontend
           </p>
@@ -47,7 +47,7 @@ export default function SkillsPage() {
             {frontend.map((item) => (
               <span
                 key={item}
-                className="rounded-[0.45rem] border border-[rgba(125,186,125,0.14)] bg-[rgba(125,186,125,0.07)] px-4 py-2 font-mono text-sm text-[rgba(216,245,216,0.78)] transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(125,186,125,0.1)] hover:text-[rgba(238,252,238,0.9)]"
+                className="rounded-[0.45rem] border border-[rgba(125,186,125,0.14)] bg-[rgba(125,186,125,0.07)] px-4 py-2 font-mono text-sm text-[rgba(216,245,216,0.78)] transition duration-300 hover:-translate-y-0.5 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_24px_rgba(125,186,125,0.14)] hover:text-[rgba(238,252,238,0.9)]"
               >
                 {item}
               </span>
@@ -55,7 +55,7 @@ export default function SkillsPage() {
           </div>
         </div>
 
-        <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(8,18,8,0.9)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
+        <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
             Backend
           </p>
@@ -63,7 +63,7 @@ export default function SkillsPage() {
             {backend.map((item) => (
               <span
                 key={item}
-                className="rounded-[0.45rem] border border-[rgba(125,186,125,0.14)] bg-[rgba(125,186,125,0.07)] px-4 py-2 font-mono text-sm text-[rgba(216,245,216,0.78)] transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(125,186,125,0.1)] hover:text-[rgba(238,252,238,0.9)]"
+                className="rounded-[0.45rem] border border-[rgba(125,186,125,0.14)] bg-[rgba(125,186,125,0.07)] px-4 py-2 font-mono text-sm text-[rgba(216,245,216,0.78)] transition duration-300 hover:-translate-y-0.5 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_24px_rgba(125,186,125,0.14)] hover:text-[rgba(238,252,238,0.9)]"
               >
                 {item}
               </span>
@@ -71,7 +71,7 @@ export default function SkillsPage() {
           </div>
         </div>
 
-        <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(8,18,8,0.9)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
+        <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
             Databases
           </p>
@@ -79,7 +79,7 @@ export default function SkillsPage() {
             {databases.map((item) => (
               <span
                 key={item}
-                className="rounded-[0.45rem] border border-[rgba(125,186,125,0.14)] bg-[rgba(125,186,125,0.07)] px-4 py-2 font-mono text-sm text-[rgba(216,245,216,0.78)] transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(125,186,125,0.1)] hover:text-[rgba(238,252,238,0.9)]"
+                className="rounded-[0.45rem] border border-[rgba(125,186,125,0.14)] bg-[rgba(125,186,125,0.07)] px-4 py-2 font-mono text-sm text-[rgba(216,245,216,0.78)] transition duration-300 hover:-translate-y-0.5 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_24px_rgba(125,186,125,0.14)] hover:text-[rgba(238,252,238,0.9)]"
               >
                 {item}
               </span>
@@ -87,7 +87,7 @@ export default function SkillsPage() {
           </div>
         </div>
 
-        <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(8,18,8,0.9)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
+        <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
             Tools
           </p>
@@ -95,7 +95,7 @@ export default function SkillsPage() {
             {tools.map((item) => (
               <span
                 key={item}
-                className="rounded-[0.45rem] border border-[rgba(125,186,125,0.14)] bg-[rgba(125,186,125,0.07)] px-4 py-2 font-mono text-sm text-[rgba(216,245,216,0.78)] transition duration-300 hover:border-[rgba(125,186,125,0.88)] hover:bg-[rgba(125,186,125,0.1)] hover:text-[rgba(238,252,238,0.9)]"
+                className="rounded-[0.45rem] border border-[rgba(125,186,125,0.14)] bg-[rgba(125,186,125,0.07)] px-4 py-2 font-mono text-sm text-[rgba(216,245,216,0.78)] transition duration-300 hover:-translate-y-0.5 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_24px_rgba(125,186,125,0.14)] hover:text-[rgba(238,252,238,0.9)]"
               >
                 {item}
               </span>
