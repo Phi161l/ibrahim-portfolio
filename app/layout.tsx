@@ -3,8 +3,8 @@ import { SiteShell } from "./_components/site-shell";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Portfolio Terminal",
-  description: "Creative hacker-inspired portfolio for a full-stack and Flutter developer.",
+  title: "Ibrahim Muhaba | Full-Stack Developer",
+  description: "Building fast, scalable web and mobile apps",
 };
 
 export default function RootLayout({
