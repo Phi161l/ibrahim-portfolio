@@ -21,6 +21,11 @@ const contactItems = [
     value: "leetcode.com/u/codenija_2020",
     href: "https://leetcode.com/u/codenija_2020/",
   },
+  {
+    label: "Telegram CHANNEL(blog)",
+    value: "t.me/code4Lifee",
+    href: "https://t.me/code4Lifee",
+  },
 ];
 
 export default function ContactPage() {

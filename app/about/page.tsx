@@ -52,6 +52,14 @@ export default function AboutPage() {
             </p>
             <div className="mt-5 space-y-4 font-mono text-sm text-[rgba(183,221,183,0.68)]">
               <div className="flex items-center justify-between border-b border-[rgba(125,186,125,0.08)] pb-3">
+                <span>Name </span>
+                <span className="text-[rgba(238,252,238,0.8)]"> Ibrahim Muhaba</span>
+              </div>
+              <div className="flex items-center justify-between border-b border-[rgba(125,186,125,0.08)] pb-3">
+                <span>AGE</span>
+                <span className="text-[rgba(238,252,238,0.8)]">22</span>
+              </div>
+              <div className="flex items-center justify-between border-b border-[rgba(125,186,125,0.08)] pb-3">
                 <span>Focus</span>
                 <span className="text-[rgba(238,252,238,0.8)]">Web + Mobile</span>
               </div>

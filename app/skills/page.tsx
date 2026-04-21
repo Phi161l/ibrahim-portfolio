@@ -2,15 +2,15 @@ import { PageHeader } from "../_components/page-header";
 
 const languages = ["JavaScript", "TypeScript", "Python"];
 const frontend = [
-  "React",
-  "Next.js",
   "HTML",
   "CSS",
+  "React",
+  "Next.js",
   "Tailwind CSS",
   "Flutter",
 ];
 const backend = ["Node.js", "Express.js"];
-const databases = ["MongoDB", "PostgreSQL", "Firebase"];
+const databases = ["MongoDB", "PostgreSQL", "Firebase", "Prisma", "Mongoose", "Redis"];
 const tools = ["Git", "GitHub", "VS Code", "Postman", "Docker", "Vercel"];
 
 export default function SkillsPage() {
@@ -41,7 +41,7 @@ export default function SkillsPage() {
 
         <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
-            Frontend
+            UI Layer
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             {frontend.map((item) => (
@@ -57,7 +57,7 @@ export default function SkillsPage() {
 
         <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
-            Backend
+            Service Layer
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             {backend.map((item) => (
@@ -73,7 +73,7 @@ export default function SkillsPage() {
 
         <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
-            Databases
+            Data Layer
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             {databases.map((item) => (
@@ -89,7 +89,7 @@ export default function SkillsPage() {
 
         <div className="rounded-[0.7rem] border border-[rgba(125,186,125,0.12)] bg-[rgba(4,10,4,0.82)] p-6 transition duration-300 hover:-translate-y-1 hover:border-[rgba(125,186,125,0.88)] hover:shadow-[0_0_35px_rgba(125,186,125,0.18)]">
           <p className="font-mono text-xs uppercase tracking-[0.3em] text-[#7dba7d]">
-            Tools
+            Tooling & Infrastructure
           </p>
           <div className="mt-5 flex flex-wrap gap-3">
             {tools.map((item) => (
